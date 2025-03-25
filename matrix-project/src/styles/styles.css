@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+    background-color: #f9fafb;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  .box {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: white;
+    background-color: #e2e8f0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .box:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+  
+  .box-green {
+    background-color: #10b981;
+  }
+  
+  .box-orange {
+    background-color: #f97316;
+    pointer-events: none;
+  }
+  
+  .status {
+    margin-top: 2rem;
+    text-align: center;
+    color: #4b5563;
+    font-size: 1.1rem;
+  }
+  
+  .reset-button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #ef4444;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reset-button:hover {
+    background-color: #dc2626;
+  }
+  
+  .reset-button:active {
+    transform: scale(0.95);
+  }
+  
